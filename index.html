@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gold Investment Portfolio | Prestige Elite Pro</title>
+    <title>Gold Investment Portfolio | Prestige Elite AI</title>
     <!-- استدعاء خطوط Google الفاخرة -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +34,8 @@
             --ruby: #F43F5E;
             --ruby-bg: rgba(244, 63, 94, 0.12);
             --sapphire: #38BDF8;
+            --ai-accent: #8B5CF6;
+            --ai-bg: rgba(139, 92, 246, 0.12);
         }
 
         /* المتغيرات للمظهر الفاتح الراقي (Professional Polish Light) */
@@ -60,6 +62,8 @@
             --ruby: #DC2626;
             --ruby-bg: rgba(220, 38, 38, 0.12);
             --sapphire: #0284C7;
+            --ai-accent: #7C3AED;
+            --ai-bg: rgba(124, 58, 237, 0.1);
         }
 
         * { box-sizing: border-box; }
@@ -134,12 +138,7 @@
         }
         .btn-gold { background: var(--gold-gradient); color: #060a12; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25); font-weight: 800; }
         .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(212, 175, 55, 0.45); }
-        .btn-theme {
-            background: var(--card-inner);
-            color: var(--gold-light);
-            border: 1px solid var(--gold-border);
-            box-shadow: var(--shadow-card);
-        }
+        .btn-theme { background: var(--card-inner); color: var(--gold-light); border: 1px solid var(--gold-border); box-shadow: var(--shadow-card); }
         .btn-theme:hover { transform: translateY(-2px); border-color: var(--gold-primary); }
         .btn-glass { background: var(--card-inner); color: var(--cream-text); border: 1px solid var(--border-soft); backdrop-filter: blur(8px); }
         .btn-glass:hover { background: rgba(200, 200, 200, 0.15); border-color: var(--gold-primary); transform: translateY(-2px); }
@@ -207,7 +206,7 @@
         .metric-card h3 { margin: 0 0 6px 0; font-size: 0.8rem; color: var(--cream-muted); font-weight: 500; }
         .metric-card p { margin: 0; font-family: 'Readex Pro', sans-serif; font-size: 1.35rem; font-weight: 700; color: var(--cream-text); letter-spacing: -0.5px; }
 
-        /* تلوين الربح والخسارة */
+        /* تلوين الأرقام */
         .badge-profit, strong.badge-profit, span.badge-profit, p.badge-profit, td.badge-profit {
             color: var(--emerald) !important;
             text-shadow: 0 0 12px rgba(16, 185, 129, 0.3) !important;
@@ -219,7 +218,7 @@
             font-weight: 700 !important;
         }
 
-        /* الصناديق */
+        /* الصناديق والأقسام */
         .section-box {
             background: var(--card-bg);
             border: 1px solid var(--border-soft);
@@ -252,6 +251,39 @@
             box-shadow: var(--shadow-card);
         }
         .tool-card h4 { margin: 0 0 14px 0; color: var(--gold-light); font-size: 1rem; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--border-soft); padding-bottom: 8px; }
+
+        /* تنسيقات الـ AI المتقدمة */
+        .ai-tool-card { border-color: rgba(139, 92, 246, 0.45); }
+        .ai-signal-badge {
+            background: var(--ai-bg);
+            border: 1px solid var(--ai-accent);
+            color: var(--ai-accent);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 0.95rem;
+            text-align: center;
+            margin-bottom: 12px;
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+            animation: pulseGlow 2.5s infinite;
+        }
+        @keyframes pulseGlow {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.01); opacity: 0.9; }
+        }
+
+        .ai-chips-group { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+        .ai-chip {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-soft);
+            color: var(--cream-muted);
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .ai-chip:hover { border-color: var(--gold-primary); color: var(--cream-text); }
 
         .input-group-custom { display: flex; flex-direction: column; gap: 5px; margin-bottom: 12px; }
         .input-group-custom label { font-size: 0.8rem; color: var(--cream-muted); font-weight: 600; text-align: right; }
@@ -307,7 +339,7 @@
             <span class="logo-icon">⚜️</span>
             <div>
                 <h1>محفظة السبائك والاستثمار الذهبي</h1>
-                <span>PRESTIGE WEALTH MANAGEMENT</span>
+                <span>PRESTIGE WEALTH MANAGEMENT & AI ANALYTICS</span>
             </div>
         </div>
         <div class="actions-group">
@@ -471,7 +503,7 @@
         </div>
     </div>
 
-    <!-- 4. مركز الأدوات المتقدمة والتحليل الاستراتيجي -->
+    <!-- 4. مركز الأدوات المتقدمة والتحليل الذكي AI -->
     <div class="section-box">
         <div class="section-header">
             <h3>🛠️ مركز الأدوات المتقدمة والتحليل الاستراتيجي</h3>
@@ -568,24 +600,35 @@
                 </div>
             </div>
 
-            <!-- أداة 4: حاسبة زكاة الذهب الذكية -->
-            <div class="tool-card">
-                <h4>🕋 حاسبة زكاة الذهب التلقائية</h4>
+            <!-- أداة 4: مستشار التحليل الذكي وتوصيات الـ AI (جديد بدلاً من الزكاة) -->
+            <div class="tool-card ai-tool-card">
+                <h4>🧠 مستشار التحليل الذكي وتوصيات التداول (AI Signals)</h4>
+                
+                <!-- شارة التوصية الحالية -->
+                <div class="ai-signal-badge" id="aiPrimarySignal">
+                    ⚡ جاري توليد التوصية الذكية...
+                </div>
+
                 <div style="background:var(--card-inner); border:1px solid var(--border-soft); border-radius:8px; padding:12px; margin-bottom:8px;">
                     <div style="display:flex; justify-content:space-between; margin-bottom:6px; font-size:0.85rem;">
-                        <span style="color:var(--cream-muted)">حالة النصاب الشرعي (85 جم):</span>
-                        <strong id="zakatStatus" style="color:var(--gold-light);">---</strong>
+                        <span style="color:var(--cream-muted)">الموقف الفني والزخم:</span>
+                        <strong id="aiTechnicalStatus" style="color:var(--gold-light);">---</strong>
                     </div>
                     <div style="display:flex; justify-content:space-between; margin-bottom:6px; font-size:0.85rem;">
-                        <span style="color:var(--cream-muted)">مقدار الزكاة عيناً (2.5%):</span>
-                        <strong id="zakatWeight" style="color:var(--sapphire);">0.00 جم ذهب</strong>
+                        <span style="color:var(--cream-muted)">نطاق الدعم / المقاومة:</span>
+                        <strong id="aiSupportResistance" style="color:var(--sapphire); font-size:0.85rem;">$4,430 / $4,550</strong>
                     </div>
-                    <div style="display:flex; justify-content:space-between; font-size:0.85rem; border-top:1px dashed var(--border-soft); padding-top:6px;">
-                        <span style="color:var(--cream-muted)">قيمة الزكاة نقداً بسعر السوق:</span>
-                        <strong id="zakatCash" style="color:var(--emerald);">0.00 ر.س</strong>
+                    <div style="border-top:1px dashed var(--border-soft); padding-top:6px; margin-top:6px; font-size:0.82rem; line-height:1.45; color:var(--cream-text);" id="aiCustomAdvice">
+                        جاري تحليل صفقات محفظتك...
                     </div>
                 </div>
-                <small style="color:var(--cream-muted); font-size:0.75rem;">* تُحسب الزكاة على إجمالي الذهب المفتوح الذي حال عليه الحول وبلغ النصاب.</small>
+
+                <!-- أزرار استعلام ذكية سريعة -->
+                <div class="ai-chips-group">
+                    <span class="ai-chip" onclick="triggerAIInsight('buy')">هل أشتري الآن؟ 🛒</span>
+                    <span class="ai-chip" onclick="triggerAIInsight('sell')">أين أبيع؟ 🎯</span>
+                    <span class="ai-chip" onclick="triggerAIInsight('portfolio')">تقييم الصفقات 📊</span>
+                </div>
             </div>
 
         </div>
@@ -998,12 +1041,12 @@
         totalRealizedElem.innerText = `${netClosedPnL > 0 ? '+' : ''}${fmt(netClosedPnL, 2)} ر.س`;
         totalRealizedElem.className = netClosedPnL >= 0 ? 'badge-profit' : 'badge-loss';
 
-        // تشغيل الأدوات
+        // تشغيل وفحص الأدوات المساعدة ونظام الذكاء الاصطناعي
         checkPriceAlerts(ounceUSD);
         renderAlertsList();
         runProfitSimulation();
         runDCACalculator();
-        calculateZakat(totalWeight, spotGramSAR);
+        runAIAnalysis(ounceUSD, totalInvested, totalWeight, totalCurrentNetValue);
 
         autoSave();
     }
@@ -1155,21 +1198,63 @@
         }
     }
 
-    // 4. حاسبة الزكاة
-    function calculateZakat(totalWeight, spotGramSAR) {
-        const nisabGram = 85.0;
-        const statusElem = document.getElementById('zakatStatus');
-        
-        if (totalWeight >= nisabGram) {
-            statusElem.innerHTML = `<span style="color:var(--emerald); font-weight:bold;">بلغ النصاب الشرعي ✅ (${fmt(totalWeight,2)} جم)</span>`;
-            const zakatGrams = totalWeight * 0.025;
-            const zakatCashVal = zakatGrams * spotGramSAR;
-            document.getElementById('zakatWeight').innerText = fmt(zakatGrams, 2) + " جم ذهب صافي";
-            document.getElementById('zakatCash').innerText = fmt(zakatCashVal, 2) + " ر.س";
+    // 4. نظام التحليل الذكي وتوصيات التداول بالذكاء الاصطناعي (AI Signal Engine)
+    function runAIAnalysis(ouncePrice, totalInvested, totalWeight, currentNetVal) {
+        if (!totalWeight || !totalInvested) {
+            document.getElementById('aiPrimarySignal').innerHTML = "⏳ بانتظار إضافة صفقات لتحليلها";
+            document.getElementById('aiTechnicalStatus').innerText = "محايد";
+            document.getElementById('aiCustomAdvice').innerText = "أضف صفقاتك المفتوحة لتوليد خطة تداول ذكية.";
+            return;
+        }
+
+        const avgBuyPerGram = totalInvested / totalWeight;
+        const breakEvenOunce = (avgBuyPerGram / 0.98) * OUNCE_TO_GRAM / 3.75;
+        const netPnLPct = ((currentNetVal - totalInvested) / totalInvested) * 100;
+
+        let signal = "";
+        let techStatus = "";
+        let supportRes = "$4,430 / $4,520";
+        let advice = "";
+
+        // فحص مستويات الأسعار الفنية ونقاط المحفظة
+        if (ouncePrice <= 4440) {
+            signal = "⚡ فرصة تبريد قوية (Accumulate / DCA)";
+            techStatus = "ارتكاز على دعم تاريخي $4,430";
+            advice = `السعر الحالي ($${fmt(ouncePrice,1)}) يلامس منطقة الدعم المحورية. يُنصح بتعزيز صفقات الراجحي ذات التكلفة المرتفعة لخفض نقطة التعادل من $${fmt(breakEvenOunce,1)}.`;
+        } else if (ouncePrice > 4440 && ouncePrice < 4520) {
+            signal = "⏳ احتفاظ ومراقبة (HOLD & WAIT)";
+            techStatus = "تذبذب عرضي داخل القناة";
+            advice = `السعر يتحرك بين الدعم ($4,430) والمقاومة ($4,520). محفظتك تحتاج صعوداً نحو $${fmt(breakEvenOunce,1)} لتحقيق صافي ربح بعد السبريد. تجنب الشراء العشوائي.`;
+        } else if (ouncePrice >= 4520 && ouncePrice < 4640) {
+            signal = "📈 صعود إيجابي نحو التعادل";
+            techStatus = "اختراق مقاومة فرعية $4,520";
+            supportRes = "$4,520 / $4,650";
+            advice = `زخم صاعد يقترب من أهداف التخارج. صفقة الأهلي (30جم) في أرباح ممتازة، احرص على حجز أرباح جزئية عند ملامسة المقاومة.`;
         } else {
-            statusElem.innerHTML = `<span style="color:var(--ruby);">أقل من النصاب (${fmt(totalWeight,2)} / 85 جم)</span>`;
-            document.getElementById('zakatWeight').innerText = "0.00 جم";
-            document.getElementById('zakatCash').innerText = "0.00 ر.س";
+            signal = "🎯 جني أرباح تدريجي (Scale-out Sell)";
+            techStatus = "قمم سعرية ومقاومة رئيسية";
+            supportRes = "$4,600 / $4,720";
+            advice = `السعر أعلى من نقطة تعادل محفظتك ($${fmt(breakEvenOunce,1)}). يُنصح ببيع الصفقات الرابحة عبر زر (تم البيع 💰) لتأمين الأرباح المحققة.`;
+        }
+
+        document.getElementById('aiPrimarySignal').innerHTML = signal;
+        document.getElementById('aiTechnicalStatus').innerText = techStatus;
+        document.getElementById('aiSupportResistance').innerText = supportRes;
+        document.getElementById('aiCustomAdvice').innerHTML = `💡 <strong>التحليل المخصص:</strong> ${advice}`;
+    }
+
+    function triggerAIInsight(type) {
+        const curPrice = parseFloat(document.getElementById('ouncePrice').value) || 0;
+        if (type === 'buy') {
+            if (curPrice <= 4450) {
+                showToast("الذكاء الاصطناعي: الشراء متاح حالياً بدفعة تبريد أولى فقط عند الدعم 4430-4450.");
+            } else {
+                showToast("الذكاء الاصطناعي: انتظر تصحيحاً أو اختراقاً واضحاً لمستوى 4520 قبل الدخول الجديد.");
+            }
+        } else if (type === 'sell') {
+            showToast("الذكاء الاصطناعي: الأهداف البيعية النموذجية القادمة: 4,520$ ثم 4,600$ ثم 4,680$.");
+        } else if (type === 'portfolio') {
+            showToast("الذكاء الاصطناعي: صفقة الأهلي (30جم) رابحة، وصفقات الراجحي تتطلب الصبر لامتصاص السبريد.");
         }
     }
 
@@ -1328,7 +1413,7 @@
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `Prestige_Gold_Portfolio_Pro_${new Date().toISOString().split('T')[0]}.json`;
+        a.download = `Prestige_Gold_Portfolio_AI_${new Date().toISOString().split('T')[0]}.json`;
         a.click();
         URL.revokeObjectURL(url);
     }
